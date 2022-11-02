@@ -36,9 +36,23 @@ public class Main {
     }
 
 
+
     public static void printSeparator() {
         System.out.println("+++++++");
         System.out.println("-------");
+    }
+
+
+    public static void calculateDeliveryDays(int deliveryDistance) {
+        System.out.println("Задание 3");
+        int deliveryDays = 1;
+        if (deliveryDistance > 20) {
+            deliveryDays++;
+        }
+        if (deliveryDistance > 60) {
+            deliveryDays++;
+        }
+        System.out.println("Потребуется дней: " + deliveryDays);
     }
 
     public static void main(String[] args) {
@@ -53,16 +67,20 @@ public class Main {
         }
         printSeparator();
 
-        public static void calculateDeliveryDays ( int deliveryDistance){
-            System.out.println("Задание 3");
-            int deliveryDays = 1;
-            if (deliveryDistance > 20) {
-                deliveryDays++;
-            }
-            if (deliveryDistance > 60) {
-                deliveryDays++;
-            }
-            System.out.println("Потребуется дней: " + deliveryDays);
+
+
+        System.out.println("Задание 3");
+        int deliveryDays = 1;
+        int deliveryDistance = 95;
+        if (deliveryDistance > 20) {
+            deliveryDays++;
         }
+        if (deliveryDistance > 60) {
+            deliveryDays++;
+        }
+        System.out.println("Потребуется дней: " + deliveryDays);
     }
-}
+    }
+
+
+
