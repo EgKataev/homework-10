@@ -1,3 +1,5 @@
+import java.time.LocalDate;
+
 public class Main {
     public static void printIsLeapYear(int Yer) {
         int year = 2022;
@@ -32,9 +34,10 @@ public class Main {
     }
 
     private static boolean isDeviceOld(int deviceYear) {
-        return false;
-    }
 
+    int currentYear = LocalDate.now().getYear();
+        return deviceYear <= currentYear;
+    }
 
 
     public static void printSeparator() {
